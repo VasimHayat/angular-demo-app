@@ -1,0 +1,21 @@
+<div class="card mb-3 border-warning " style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img  [src]="blogPost.image"  class="card-img-top" style="height:225px" >
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title text-dark">{{blogPost.user.firstName}} {{blogPost.user.lastName}}</h5>
+
+          <p class="card-text  ">{{blogPost.text}}</p>
+
+          <p class="card-text"><small class="text-muted">Last updated {{blogPost.publishDate | date: 'fullDate' }}</small></p>
+
+          <p class="list-group-item text-danger">Tags: {{blogPost.tags | appTagPipe:true}}</p>
+
+          <p class="card-text">  <a href="{{blogPost.link}}" class="card-link"></a>Read more</p>
+          <button class="btn btn-danger " (click)="deletePost()">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -10,7 +10,7 @@ import { HttpHeaders } from '@angular/common/http';
 })
 export class AppHeaderComponent implements OnInit{
     
-   title = 'Hubworks';
+   title = 'test';
    logoUrl='https://cdn.hubworks.com/ssoprod/202101271233/assets/images/icons/hubworks_white_bk.png';
 
 
